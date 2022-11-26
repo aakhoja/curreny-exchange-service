@@ -7,6 +7,7 @@ public class CurrenyExchange {
     private String from;
     private String to;
     private BigDecimal conversionRate;
+    private String environment;
 
     public CurrenyExchange() {
     }
@@ -50,6 +51,14 @@ public class CurrenyExchange {
         this.conversionRate = conversionRate;
     }
 
+    public String getEnvironment() {
+        return environment;
+    }
+
+    public void setEnvironment(String environment) {
+        this.environment = environment;
+    }
+
     @Override
     public String toString() {
         return "CurrenyExchange{" +
@@ -57,6 +66,7 @@ public class CurrenyExchange {
                 ", from='" + from + '\'' +
                 ", to='" + to + '\'' +
                 ", conversionRate=" + conversionRate +
+                ", environment='" + environment + '\'' +
                 '}';
     }
 }
